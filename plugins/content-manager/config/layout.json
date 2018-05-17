@@ -1,0 +1,23 @@
+{
+  "todoItem": {
+    "attributes": {
+      "text": {
+        "appearance": ""
+      }
+    }
+  },
+  "todolist": {
+    "attributes": {
+      "title": {
+        "appearance": ""
+      }
+    }
+  },
+  "tag": {
+    "attributes": {
+      "text": {
+        "appearance": ""
+      }
+    }
+  }
+}

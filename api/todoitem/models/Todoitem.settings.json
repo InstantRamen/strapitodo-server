@@ -1,0 +1,33 @@
+{
+  "connection": "default",
+  "collectionName": "todoitem",
+  "info": {
+    "name": "todoitem",
+    "description": "An item to do. May have child items."
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "parentTodo": {
+      "model": "todoitem",
+      "via": "childTodos"
+    },
+    "childTodos": {
+      "model": "todoitem",
+      "via": "parentTodo"
+    },
+    "parentlist": {
+      "model": "todolist",
+      "via": "todoitems"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "todoitems",
+      "dominant": true
+    }
+  }
+}

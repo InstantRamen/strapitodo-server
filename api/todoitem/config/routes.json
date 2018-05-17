@@ -1,0 +1,44 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/todoitem",
+      "handler": "Todoitem.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/todoitem/:_id",
+      "handler": "Todoitem.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/todoitem",
+      "handler": "Todoitem.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/todoitem/:_id",
+      "handler": "Todoitem.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/todoitem/:_id",
+      "handler": "Todoitem.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

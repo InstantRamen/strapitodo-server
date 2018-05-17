@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "todolist",
+  "info": {
+    "name": "todolist",
+    "description": "List of things to do"
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "owner": {
+      "model": "user",
+      "via": "todolists",
+      "dominant": true,
+      "plugin": "users-permissions"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "todoitems": {
+      "collection": "todoitem",
+      "via": "parentlist",
+      "dominant": true
+    }
+  }
+}
